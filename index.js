@@ -51,8 +51,10 @@ export const burger = {
   price: 18, 
   category: "Lunch", 
   /*Your code here*/
-  
-}
+  discount : function(staff){
+    burger[1].price = 14;
+  }
+};
 
 
 
@@ -73,7 +75,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-
+console.log(reviews[5]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -82,7 +84,9 @@ Using the reviews array above do the following: (no function needed)
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
+reviews.push('Jordan', 3.5, 'Hopefully doing better than the first go at unit one');
 
+console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following: (no function needed) 
@@ -90,7 +94,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-
+reviews[7][2] = "this place is chill with really cool people, great for getting work done on weekdays";
 
 
 
